@@ -1,0 +1,20 @@
+.visitor-chart__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #3e3f42;
+  }
+
+  .drop-downs {
+    display: flex;
+
+    & > div:first-child {
+      margin-right: 1rem;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.most-viewed {
+  .content {
+    padding: 0;
+  }
+
+  .card-table {
+    tr {
+      td, th {
+        padding: 5px 15px;
+        width: 200px;
+      }
+
+      td:first-child, th:first-child {
+        padding-left: 30px;
+      }
+
+      td:last-child, th:last-child {
+        padding-right: 30px;
+      }
+
+      .page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .bonus-rate {
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

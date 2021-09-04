@@ -1,0 +1,42 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 190px;
+  border-bottom: 1px solid #eeeeee;
+
+  .image-wrapper {
+    position: relative;
+    width: max-content;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .setting {
+    position: absolute;
+    right: -5%;
+    bottom: -5%;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: #fff;
+  }
+
+  .name {
+    margin-top: 14px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: #3e3f42;
+  }
+
+  .title {
+    color: #9ea0a5;
+    font-size: .875rem;
+  }
+}

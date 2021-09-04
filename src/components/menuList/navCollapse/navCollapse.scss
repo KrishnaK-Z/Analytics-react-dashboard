@@ -1,0 +1,20 @@
+.panel-collapse {
+  padding: 0 0 0 2rem !important;
+  overflow: hidden;
+  transition: max-height .5s ease;
+  flex-basis: 100%;
+
+  &.nav-links {
+    li {
+      border-bottom: none;
+      color: #9ea0a5;
+    }
+
+    h2 {
+      min-height: 40px;
+    }
+  }
+}
+.panel-close {
+  max-height: 0;
+}

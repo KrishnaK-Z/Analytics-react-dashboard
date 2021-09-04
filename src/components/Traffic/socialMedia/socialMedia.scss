@@ -1,0 +1,39 @@
+.social-media {
+  .content {
+    padding: 0;
+  }
+
+  .card-table {
+
+    .traffic-stat-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 300px;
+
+      span {
+        flex: 1;
+      }
+    }
+
+    .progress {
+      width: 100%;
+      display: flex;
+      border-radius: 4px;
+      height: 4px;
+      background: #eaedf3;
+      margin-left: 20px;
+      flex-basis: 70%;
+
+      &-bar {
+        background: #1665d8;
+        flex-grow: 0;
+        flex-shrink: 0;
+        border-radius: 4px;
+        display: block;
+        height: 100%;
+        width: 70%;
+      }
+    }
+  }
+}
