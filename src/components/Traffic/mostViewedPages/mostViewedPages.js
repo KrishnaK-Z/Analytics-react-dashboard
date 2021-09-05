@@ -3,10 +3,13 @@ import Card from "../../card";
 import MOST_VIEWED_PAGES from "./data";
 import "./mostViewedPages.scss";
 import Chart from "react-apexcharts";
-import CHART_DATA from "./chartData";
+import { constructChartData } from "./chartData";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const MostViewedPages = () => {
+  const CHART_DATA = [31, 20, 45, 22, 38, 25, 20, 24, 33, 26, 20, 35];
+
+  // Card title.
   const header = <h1>Most Visited Pages</h1>;
 
   return (
@@ -35,7 +38,7 @@ const MostViewedPages = () => {
                 <td className="unique-page">{uniquePageVisits}</td>
                 <td className="bonus-rate">
                   <span>{bRate}</span>
-                  <Chart {...CHART_DATA} />
+                  <Chart {...constructChartData([...CHART_DATA])} />
                 </td>
               </tr>
             )
