@@ -20,8 +20,8 @@ const VisitorsChart = () => {
     <div className="visitor-chart__title">
       <h1>Daily Visitors</h1>
       <div className="drop-downs">
-        <DropDown items={months} />
-        <DropDown items={years} />
+        <DropDown className="month-dropdown" items={months} />
+        <DropDown className="year-dropdown" items={years} />
       </div>
     </div>
   );

@@ -44,7 +44,13 @@ const DropDown = ({ items, className }) => {
         {items.map(item => {
           const { imgSrc, name, id } = item;
           return (
-            <li key={id} onClick={() => setValue([item])}>
+            <li
+              key={id}
+              onClick={() => {
+                setValue([item]);
+                setExpanded(value => !value);
+              }}
+            >
               {imgSrc && <img width={20} height={20} src={imgSrc} alt={name} />}
               <span>{name}</span>
             </li>
