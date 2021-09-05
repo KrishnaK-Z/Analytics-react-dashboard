@@ -1,12 +1,12 @@
 .card {
-  width: 100%;
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
   background: #fff;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  width: 100%;
 
   .header {
-    padding: 1rem;
     border-bottom: 1px solid #eeeeee;
+    padding: 1rem;
   }
 
   .content {

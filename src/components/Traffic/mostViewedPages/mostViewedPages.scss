@@ -19,15 +19,15 @@
       }
 
       .page {
+        align-items: center;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         width: 100%;
       }
 
       .bonus-rate {
-        display: flex;
         align-items: center;
+        display: flex;
 
         span {
           margin-right: 1rem;

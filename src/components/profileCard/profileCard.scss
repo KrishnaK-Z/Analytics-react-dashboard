@@ -1,9 +1,9 @@
 .profile-card {
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-height: 190px;
-  border-bottom: 1px solid #eeeeee;
 
   .image-wrapper {
     position: relative;
@@ -11,28 +11,28 @@
   }
 
   .profile-pic {
-    width: 100px;
+    border-radius: 50%;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%;
+    width: 100px;
   }
 
   .setting {
+    background: #fff;
+    border-radius: 100%;
+    bottom: -5%;
+    height: 32px;
     position: absolute;
     right: -5%;
-    bottom: -5%;
     width: 32px;
-    height: 32px;
-    border-radius: 100%;
-    background: #fff;
   }
 
   .name {
-    margin-top: 14px;
+    color: #3e3f42;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
-    font-size: 1rem;
-    color: #3e3f42;
+    margin-top: 14px;
   }
 
   .title {

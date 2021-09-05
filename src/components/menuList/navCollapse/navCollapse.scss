@@ -1,8 +1,8 @@
 .panel-collapse {
-  padding: 0 0 0 2rem !important;
-  overflow: hidden;
-  transition: max-height .5s ease;
   flex-basis: 100%;
+  overflow: hidden;
+  padding: 0 0 0 2rem !important;
+  transition: max-height .5s ease;
 
   &.nav-links {
     li {
