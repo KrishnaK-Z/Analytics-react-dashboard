@@ -29,8 +29,14 @@
         align-items: center;
         display: flex;
 
-        span {
+        & > span {
           margin-right: 1rem;
+        }
+
+        .arrow_box {
+          span {
+            margin: 0.75rem;
+          }
         }
       }
     }

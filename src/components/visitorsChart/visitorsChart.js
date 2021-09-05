@@ -27,7 +27,7 @@ const VisitorsChart = () => {
   );
 
   return (
-    <Card header={header}>
+    <Card className="visitor-chart" header={header}>
       <Chart {...chartData} />
     </Card>
   );

@@ -22,19 +22,14 @@ export const constructChartData = data => {
         width: 2
       },
       tooltip: {
-        fixed: {
-          enabled: false
-        },
-        x: {
-          show: false
-        },
-        y: {
-          title: {
-            formatter: seriesName => "Visitors "
-          }
-        },
-        marker: {
-          show: false
+        custom: function({ series, seriesIndex, dataPointIndex, w }) {
+          return (
+            '<div class="arrow_box">' +
+            "<span>Visitors: " +
+            series[seriesIndex][dataPointIndex] +
+            "</span>" +
+            "</div>"
+          );
         }
       }
     },

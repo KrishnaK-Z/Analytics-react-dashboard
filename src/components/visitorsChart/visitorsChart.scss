@@ -1,20 +1,26 @@
-.visitor-chart__title {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-
-  h1 {
-    color: #3e3f42;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.75rem;
+.visitor-chart {
+  .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+    display: none;
   }
 
-  .drop-downs {
+  &__title {
+    align-items: center;
     display: flex;
+    justify-content: space-between;
 
-    & > div:first-child {
-      margin-right: 1rem;
+    h1 {
+      color: #3e3f42;
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.75rem;
+    }
+
+    .drop-downs {
+      display: flex;
+
+      & > div:first-child {
+        margin-right: 1rem;
+      }
     }
   }
 }
