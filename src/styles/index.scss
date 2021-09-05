@@ -139,11 +139,11 @@ body {
   justify-content: space-between;
   margin-top: 2rem;
   & > div:first-child {
-    flex-basis: 66%;
+    flex-basis: calc(70% - 4%)
   }
 
   & > div:last-child {
-    flex-basis: calc(30% - 16px);
+    flex-basis: 30%;
   }
 }
 
