@@ -1,15 +1,14 @@
 import React, { Suspense } from "react";
 import { HashRouter, Route } from "react-router-dom";
+import Loader from "./loader";
 
 // Containers
 const DefaultLayout = React.lazy(() => import("../layout"));
 
 const App = () => {
-  const loading = <div className="pt-3 text-center">Loading</div>;
-
   return (
     <HashRouter>
-      <Suspense fallback={loading}>
+      <Suspense fallback={<Loader />}>
         <Route
           path="/"
           name="Home"

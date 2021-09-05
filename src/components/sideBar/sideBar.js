@@ -35,12 +35,12 @@ const SideBar = () => {
         </section>
         <footer className="credits">
           <div className="credit">
-            <strong>Inspired By: </strong>
-            <span>dribbble.com/janlosert</span>
+            <strong>Developed By: </strong>
+            <span>github.com/KrishnaK-Z</span>
           </div>
           <div className="credit">
-            <strong>Developed By: </strong>
-            <span>KrishnaKumar</span>
+            <strong>Inspired By: </strong>
+            <span>dribbble.com/janlosert</span>
           </div>
         </footer>
       </div>

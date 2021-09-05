@@ -1,5 +1,6 @@
 // Navigation styles.
 .nav-bar {
+  background: #fff;
   border-right: 1px solid #eaedf3;
   display: flex;
   flex-basis: 270px;
@@ -105,5 +106,9 @@
 
   span {
     color: #3e3f42;
+  }
+
+  .credit:first-child {
+    margin-bottom: .3rem;
   }
 }
