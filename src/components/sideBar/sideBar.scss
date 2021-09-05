@@ -30,7 +30,7 @@
 }
 
 .nav-links {
-  padding: 16px 30px 30px;
+  padding: 1rem 1.875rem 1.875rem;
 
   li {
     border-bottom: 1px solid #eaedf3;
@@ -49,12 +49,12 @@
       }
 
       svg {
-        font-size: 14px;
+        font-size: 0.875rem;
       }
     }
 
     svg {
-      font-size: 20px;
+      font-size: 1.25rem;
       margin-right: 1rem;
 
       &:hover {
@@ -73,7 +73,7 @@
     font-size: .75rem;
     font-weight: 500;
     line-height: 1.5;
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
     text-transform: uppercase;
   }
 
@@ -84,7 +84,7 @@
     font-size: .875rem;
     justify-content: space-between;
     min-height: 40px;
-    padding: 0 30px;
+    padding: 0 1.875rem;
     position: relative;
     text-decoration: none;
 
@@ -101,7 +101,7 @@
   font-size: .75rem;
   font-weight: 500;
   line-height: 1.5;
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
 
   span {
     color: #3e3f42;

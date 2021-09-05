@@ -6,16 +6,16 @@
   .card-table {
     tr {
       td, th {
-        padding: 5px 15px;
+        padding: 0.313rem 0.938rem;
         width: 200px;
       }
 
       td:first-child, th:first-child {
-        padding-left: 30px;
+        padding-left: 1.875rem;
       }
 
       td:last-child, th:last-child {
-        padding-right: 30px;
+        padding-right: 1.875rem;
       }
 
       .page {
