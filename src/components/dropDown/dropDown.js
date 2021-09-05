@@ -7,22 +7,20 @@ import { useDropdown } from "./useDropDown";
  * @classdesc Drop down options.
  *
  * @param items
+ * @param className
  */
-const DropDown = ({ items }) => {
+const DropDown = ({ items, className }) => {
   // Returns props necessary to render drop down.
   const { elementRef, expanded, setExpanded, triggerRef } = useDropdown();
 
-  // Default item.
-  const defaultItem = items.filter(item => item.default);
-
   // Set the field value to the selected item.
-  const [value, setValue] = useState(defaultItem[0].name);
+  const [value, setValue] = useState(items.filter(item => item.default));
 
   return (
-    <div className="drop-down" ref={triggerRef}>
-      <input type="hidden" value={value} />
+    <div className={`drop-down ${className}`} ref={triggerRef}>
+      <input type="hidden" value={value[0].name} />
       <div className="label" onClick={() => setExpanded(value => !value)}>
-        {defaultItem.map(({ id, imgSrc, name }) => (
+        {value?.map(({ id, imgSrc, name }) => (
           <Fragment key={id}>
             {imgSrc && (
               <img
@@ -43,12 +41,15 @@ const DropDown = ({ items }) => {
         ref={elementRef}
         className={`drop-down__items ${expanded ? "open" : ""}`}
       >
-        {items.map(({ imgSrc, name, id }) => (
-          <li key={id} onClick={() => setValue(name)}>
-            {imgSrc && <img width={20} height={20} src={imgSrc} alt={name} />}
-            <span>{name}</span>
-          </li>
-        ))}
+        {items.map(item => {
+          const { imgSrc, name, id } = item;
+          return (
+            <li key={id} onClick={() => setValue([item])}>
+              {imgSrc && <img width={20} height={20} src={imgSrc} alt={name} />}
+              <span>{name}</span>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="main__header">
       <h2>Dashboard</h2>
-      <DropDown items={countries} />
+      <DropDown className={"country-dropdown"} items={countries} />
     </header>
   );
 };
