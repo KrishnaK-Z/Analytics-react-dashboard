@@ -17,9 +17,13 @@ const DropDown = ({ items, className }) => {
   const [value, setValue] = useState(items.filter(item => item.default));
 
   return (
-    <div className={`drop-down ${className}`} ref={triggerRef}>
+    <div className={`drop-down ${className}`}>
       <input type="hidden" value={value[0].name} />
-      <div className="label" onClick={() => setExpanded(value => !value)}>
+      <div
+        ref={triggerRef}
+        className="label"
+        onClick={() => setExpanded(value => !value)}
+      >
         {value?.map(({ id, imgSrc, name }) => (
           <Fragment key={id}>
             {imgSrc && (
@@ -37,26 +41,30 @@ const DropDown = ({ items, className }) => {
         <div className="arrows" />
       </div>
 
-      <ul
-        ref={elementRef}
-        className={`drop-down__items ${expanded ? "open" : ""}`}
-      >
-        {items.map(item => {
-          const { imgSrc, name, id } = item;
-          return (
-            <li
-              key={id}
-              onClick={() => {
-                setValue([item]);
-                setExpanded(value => !value);
-              }}
-            >
-              {imgSrc && <img width={20} height={20} src={imgSrc} alt={name} />}
-              <span>{name}</span>
-            </li>
-          );
-        })}
-      </ul>
+      {expanded && (
+        <ul
+          ref={elementRef}
+          className={`drop-down__items ${expanded ? "open" : ""}`}
+        >
+          {items.map(item => {
+            const { imgSrc, name, id } = item;
+            return (
+              <li
+                key={id}
+                onClick={() => {
+                  setValue([item]);
+                  setExpanded(value => !value);
+                }}
+              >
+                {imgSrc && (
+                  <img width={20} height={20} src={imgSrc} alt={name} />
+                )}
+                <span>{name}</span>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 };

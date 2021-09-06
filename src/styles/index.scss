@@ -156,12 +156,12 @@ body {
 }
 
 .traffic-stats {
-
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+
   & > div:first-child {
-    flex-basis: calc(70% - 4%)
+    max-width: calc(66% - 8px);
   }
 
   & > div:last-child {
